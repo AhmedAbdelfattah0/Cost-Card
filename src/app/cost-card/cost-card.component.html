@@ -1,0 +1,417 @@
+<div class="pi-header">
+  <!-- Header row -->
+  <div class="pi-section-w pi-section-dark bgColor">
+    <div class="pi-section pi-row-sm">
+
+      <!-- Phone -->
+      <!-- <div class="pi-row-block pi-row-block-txt">
+        <i class="pi-row-block-icon icon-phone pi-icon-base pi-icon-square"></i>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Tel:
+          </font>
+        </font><strong>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">xxxxxxxxx</font>
+          </font>
+        </strong>
+      </div> -->
+      <!-- End phone -->
+
+      <!-- Email -->
+      <div class="pi-row-block pi-row-block-txt pi-pull-right pi-hidden-xs"><i
+          class="pi-row-block-icon icon-mail pi-icon-base pi-icon-square"></i>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Email: </font>
+        </font><a href="#">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">sales@arabyads.com</font>
+          </font>
+        </a>
+      </div>
+      <!-- End email -->
+
+      <!-- Social icons -->
+      <div class="pi-row-block pi-row-block-txt pi-pull-right pi-hidden-xs">
+        <i class="pi-row-block-icon icon-chart-line pi-icon-base pi-icon-square"></i>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Service:
+          </font>
+        </font><strong>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">ArabyAds</font>
+          </font>
+        </strong>
+      </div>
+      <!-- End social icons -->
+
+      <!-- Text -->
+      <div class="pi-row-block pi-row-block-txt pi-pull-right pi-hidden-xs">
+        <i class="pi-row-block-icon icon-user pi-icon-base pi-icon-square"></i>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Account:
+          </font>
+        </font><strong>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Sales</font>
+          </font>
+        </strong>
+      </div>
+
+      <!-- End text -->
+
+    </div>
+  </div>
+  <!-- End header row -->
+</div>
+
+<div class="page">
+  <div class="pi-section-w pi-section-white piTooltips">
+
+    <div class="pi-section pi-padding-bottom-80" style="max-width:none">
+
+      <div class="pi-row">
+
+
+        <!-- Col 12 -->
+        <div class="pi-col-sm-12">
+
+          <!-- Box -->
+          <div class="pi-shadow-effect7">
+            <div class="pi-box pi-border pi-round pi-border-top pi-text-center">
+
+              <h4 class="pi-weight-600">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">
+                    ArabyAds
+                  </font>
+                </font>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">
+                    ArabyAds is a one-stop shop for all performance marketing solutions. We promise high performance for our partners’ advertising campaigns, by delivering results in terms of leads & sales conversions</font>
+                </font> 
+              <p>
+                <!-- <button class="btn pi-btn pi-btn-base" data-toggle="modal" data-target="#adsDetails">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                      More details
+                    </font>
+                  </font>
+                </button> -->
+              </p>
+
+            </div>
+          </div>
+          <!-- End box -->
+
+        </div>
+        <!-- End col 12 -->
+
+        
+
+      </div>
+<!-- Col 4 -->
+<div class="pi-col-sm-6">
+
+  <!-- Box -->
+  <div class="pi-shadow-effect7">
+    <div class="pi-box pi-border pi-round pi-border-top">
+
+      <h4 class="pi-weight-600">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            Terms
+          </font>
+        </font>
+      </h4>
+      <p style="font-size:12px">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            The products and quantities of each pack must be respected to benefit from the prices displayed.
+          </font>
+        </font>
+      </p>
+      <p>
+        <button class="btn pi-btn pi-btn-base" data-toggle="modal" data-target="#myModal">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              See the Conditions
+            </font>
+          </font>
+        </button>
+      </p>
+
+
+
+
+    </div>
+  </div>
+  <!-- End box -->
+
+</div>
+<!-- End col 4 -->
+      <div class="pi-section-white pi-col-xs-6 pi-col-3xs ">
+        <table class="pi-pricing">
+          <thead>
+            <tr>
+              <td class="pi-pricing-head-purple pi-text-center">
+                <div class="pi-pricing-price">
+                  <!--<span class="pi-pricing-currency">MAD</span>-->
+                  <span class="pi-pricing-amount"
+                    id="AMOUNT_50000">{{rate| currency:'CAD':'symbol-narrow':'2.2-2'}}</span>
+                  <!--<span class="pi-pricing-period"> /$</span>-->
+                </div>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                <select nice-select required="" [(ngModel)]="selectedModel" name="model"
+                  (ngModelChange)="showCat(selectedModel)">
+                  <option value="">Select Model</option>
+                  <option *ngFor="let model of models" value="{{model.id}}">{{model.name}}</option>
+
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <select nice-select required="" [(ngModel)]="selectedCategries" name="category"
+                  (ngModelChange)="showSubCat(selectedCategries)" [disabled]="!categoriesDis">
+                  <option value="">Select Category </option>
+                  <option *ngFor="let cat of categories" value="{{cat.id}}">{{cat.name}}</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <select nice-select name="subcategory" [disabled]="!SubCategoryDis" [(ngModel)]="selectedSubCategries"
+                  (ngModelChange)="getRate(selectedSubCategries)">
+                  <option value="">Select sub category</option>
+                  <option *ngFor="let subcat of SubCategory" value="{{subcat.id}}">{{subcat.name}}</option>
+
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <select nice-select name="region" required="" [(ngModel)]="selectedRegion"
+                  (ngModelChange)="showContries(selectedRegion)">
+                  <option value="">Select Region</option>
+                  <option *ngFor="let reg of regions" value="{{reg.id}}">{{reg.name}}</option>
+
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <!-- <label for="state">Country</label> -->
+                <tag-input id="bg" secondaryPlaceholder='Select Country' [ngModel]="selectedContry"
+                  [ngModelOptions]="{standalone: true}" [disable]="!contryDis" [clearOnBlur]="true"
+                  [onlyFromAutocomplete]="true" (onAdd)="addConties($event)" (onRemove)="removeConties($event)">
+                  <tag-input-dropdown [showDropdownIfEmpty]="false" [autocompleteItems]="contries" [identifyBy]="'id'"
+                    [displayBy]="'name'">
+                  </tag-input-dropdown>
+                </tag-input>
+              </td>
+            </tr>
+
+            <!-- <tr>
+              <td>
+                <select nice-select name="userclass" aria-placeholder="User Class" required="" [(ngModel)]="userClass"
+                  (ngModelChange)="Calculate()">
+                  <option value=" ">Select User Class</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                </select>
+              </td>
+            </tr> -->
+
+            <tr>
+              <td>
+                <select nice-select name="banners" required="" [(ngModel)]="Banners" (ngModelChange)="Calculate()">
+                  <option value=" ">Select Banners</option>
+                  <option>Client </option>
+                  <option>Own </option>
+                  <option>Both</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="mr-2 mb-3 p-3  ">HNWI</label>
+                <ui-switch size="small" [(ngModel)]="HNWI" [checked]="true" (ngModelChange)="Calculate()"></ui-switch>
+
+              </td>
+            </tr>
+            <!-- <tr>
+                 <td class="mb-3 col-md-12 mx-auto text-center">
+                    <button class="btn btn-primary btn-lg  mx-auto" type="submit" (click)="Calculate()" >Calculate</button>
+                 </td>
+               </tr> -->
+          </tbody>
+          <!--<tfoot>
+                          <tr>
+                            <td>
+                              <p>
+                                <button class="btn pi-btn-wide pi-btn-purple" onclick="book('50000')" id="msg_50000">
+                                  Je réserve
+                                </button>
+                              </p>
+                            </td>
+                          </tr>
+                        </tfoot>-->
+        </table>
+      </div>
+
+    </div>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Terminology / Glossary</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <app-glossary></app-glossary>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="button" class="btn pi-btn pi-btn-base" data-dismiss="modal">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">To close</font>
+                  </font>
+                </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+      style="display: none;">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">× </font>
+                </font>
+              </span><span class="sr-only">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Close</font>
+                </font>
+              </span></button>
+            <h4 class="modal-title" id="myModalLabel">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">terms</font>
+              </font>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                  the prices of the packs below can not be applied if the customer chooses to buy only videos.
+                </font>
+              </font>
+            </p>
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                  the prices of the views of a pack can not be applied to the pack below
+                </font>
+              </font>
+            </p>
+            <p class="pi-no-margin">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                  the prices of the packs below can not be applied if the customer decides to increase the quantity of
+                  the
+                  videos and to lower that of the banners.
+                </font>
+              </font>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn pi-btn pi-btn-base" data-dismiss="modal">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">To close</font>
+              </font>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="modal fade" id="adsDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true" style="display: none;">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">× </font>
+                </font>
+              </span><span class="sr-only">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Close</font>
+                </font>
+              </span></button>
+            <h4 class="modal-title" id="myModalLabel">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">terms</font>
+              </font>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                  the prices of the packs below can not be applied if the customer chooses to buy only videos.
+                </font>
+              </font>
+            </p>
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                  the prices of the views of a pack can not be applied to the pack below
+                </font>
+              </font>
+            </p>
+            <p class="pi-no-margin">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                  the prices of the packs below can not be applied if the customer decides to increase the quantity of
+                  the
+                  videos and to lower that of the banners.
+                </font>
+              </font>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn pi-btn pi-btn-base" data-dismiss="modal">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">To close</font>
+              </font>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

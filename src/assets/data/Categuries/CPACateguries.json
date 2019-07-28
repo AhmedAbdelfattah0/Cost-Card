@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "One click flow / Two click flow",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "WAP",
+                "rate": 2.90
+            },
+            {
+                "id": 2,
+                "name": "Mobile App",
+                "rate": 2.90
+            }
+        ]
+    }
+]

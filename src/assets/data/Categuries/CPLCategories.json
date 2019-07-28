@@ -1,0 +1,139 @@
+[
+  
+    {
+        "id": 2,
+        "name": "Automotive",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Standard",
+                "rate": 45.00
+            },
+            {
+                "id": 2,
+                "name": "Luxury",
+                "rate": 55.00
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Banks",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Credit Cards",
+                "rate": 45.00
+            },
+            {
+                "id": 2,
+                "name": "Loans",
+                "rate": 45.00
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Real Estate",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Appartments ",
+                "rate": 45.00
+            },
+            {
+                "id": 3,
+                "name": "Appartments (Unit price > 1.5-2M)",
+                "rate": 55.00
+            },
+            {
+                "id": 2,
+                "name": "Villas",
+                "rate": 66.00
+            },
+            
+            {
+                "id": 4,
+                "name": "Villa  (Expensive)",
+                "rate": 77.00
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Health",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Beauty, Slimming, Fitness",
+                "rate": 25.00
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Education",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Univercity, College, Institutes",
+                "rate": 34.00
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Research",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Panelist",
+                "rate": 11.00
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Travel",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Holidays, Packages, Tours",
+                "rate": 13.00
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Insurance",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Travel",
+                "rate": 60.00
+            },
+            {
+                "id": 2,
+                "name": "Health",
+                "rate": 66.00
+            },
+            {
+                "id": 3,
+                "name": "Car",
+                "rate": 64.00
+            }
+        ]
+    }
+
+    ,
+    {
+        "id": 10,
+        "name": "Entertainment & Events",
+        "subCat":[
+            {
+                "id": 1,
+                "name": "Event",
+                "rate": 29.00
+            }]
+    }
+]

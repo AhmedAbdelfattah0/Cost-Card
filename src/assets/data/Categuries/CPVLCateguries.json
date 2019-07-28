@@ -1,0 +1,18 @@
+[
+    {
+        "id": 4,
+        "name": "Real Estate",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Appartments ",
+                "rate": 47.00
+            },
+            {
+                "id": 2,
+                "name": "Villas",
+                "rate": 66.00
+            }
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+[
+{
+    "id":1,
+    "name":"General",
+    "subCat": [
+            {
+                "id": 1,
+                "name": "Blind with ROI target",
+                "rate": 0.50
+            }
+        ]
+}
+
+    
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Downloads",
+        "subCat": [
+            {
+                "id": 1,
+                "name": "Desktop",
+                "rate": 2.50
+            },
+            {
+                "id": 2,
+                "name": "Mobile iOS",
+                "rate": 2.50
+            },
+            {
+                "id": 3,
+                "name": "Mobile Android",
+                "rate": 1.65
+            }
+        ]
+    }
+]

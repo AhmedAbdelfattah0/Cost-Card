@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "name": "GCC",
+        "Country": [
+            {
+                "id": 1,
+                "name": "KSA"
+            },
+            {
+                "id": 2,
+                "name": "UAE"
+            },
+            {
+                "id": 3,
+                "name": "Bahrain"
+            },
+            {
+                "id": 4,
+                "name": "Qatar"
+            },
+            {
+                "id": 5,
+                "name": "Oman"
+            },
+            {
+                "id": 6,
+                "name": "Kuwait"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Levant",
+        "Country": [
+            {
+                "id": 1,
+                "name": "Jordan"
+            },
+            {
+                "id": 2,
+                "name": "Lebanon "
+            },
+            {
+                "id": 3,
+                "name": "Iraq"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "NA",
+        "Country": [
+            {
+                "id": 1,
+                "name": "Egypt"
+            },
+            {
+                "id": 2,
+                "name": "Morocco"
+            },
+            {
+                "id": 3,
+                "name": "Tunis"
+            },
+            {
+                "id": 4,
+                "name": "Algeria"
+            }
+            
+        ]
+    }
+]
